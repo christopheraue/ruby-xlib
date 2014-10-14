@@ -27,17 +27,17 @@
 #++
 
 class X11::Xrandr::XRRCrtcInfo < FFI::Struct
-	layout \
-		:timestamp, :Time,
-		:x,         :int,
-		:y,         :int,
-		:width,     :uint,
-		:height,    :uint,
-		:mode,      :RRMode,
-		:rotation,  :Rotation,
-		:noutput,   :int,
-		:outputs,   :pointer,
-		:rotations, :Rotation,
-		:npossible, :int,
-		:possible,  :pointer
+  layout \
+    :timestamp, :Time,
+    :x,         :int,
+    :y,         :int,
+    :width,     :uint,
+    :height,    :uint,
+    :mode,      :RRMode,
+    :rotation,  :Rotation,
+    :noutput,   :int,
+    :outputs,   :pointer,
+    :rotations, :Rotation,
+    :npossible, :int,
+    :possible,  :pointer
 end

@@ -27,10 +27,10 @@
 #++
 
 class X11::Xrandr::XRRPropertyInfo < FFI::Struct
-	layout \
-		:pending,    :Bool,
-		:range,      :Bool,
-		:immutable,  :Bool,
-		:num_values, :int,
-		:values,     :pointer
+  layout \
+    :pending,    :Bool,
+    :range,      :Bool,
+    :immutable,  :Bool,
+    :num_values, :int,
+    :values,     :pointer
 end

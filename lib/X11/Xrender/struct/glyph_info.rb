@@ -27,11 +27,11 @@
 #++
 
 class X11::Xrender::XGlyphInfo < FFI::Struct
-	layout \
-		:width,  :ushort,
-		:height, :ushort,
-		:x,      :short,
-		:y,      :short,
-		:xOff,   :int,
-		:yOff,   :int
+  layout \
+    :width,  :ushort,
+    :height, :ushort,
+    :x,      :short,
+    :y,      :short,
+    :xOff,   :int,
+    :yOff,   :int
 end

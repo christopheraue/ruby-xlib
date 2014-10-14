@@ -27,19 +27,19 @@
 #++
 
 class X11::Xlib::XConfigureRequestEvent < FFI::Struct
-	layout \
-		:struct,         :int,
-		:serial,       :ulong,
-		:send_event,   :Bool,
-		:display,      :pointer,
-		:event,        :Window,
-		:window,       :Window,
-		:x,            :int,
-		:y,            :int,
-		:width,        :int,
-		:height,       :int,
-		:border_width, :int,
-		:above,        :Window,
-		:detail,       :int,
-		:value_mask,   :ulong
+  layout \
+    :struct,         :int,
+    :serial,       :ulong,
+    :send_event,   :Bool,
+    :display,      :pointer,
+    :event,        :Window,
+    :window,       :Window,
+    :x,            :int,
+    :y,            :int,
+    :width,        :int,
+    :height,       :int,
+    :border_width, :int,
+    :above,        :Window,
+    :detail,       :int,
+    :value_mask,   :ulong
 end

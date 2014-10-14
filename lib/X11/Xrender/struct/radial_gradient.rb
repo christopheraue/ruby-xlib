@@ -27,7 +27,7 @@
 #++
 
 class X11::Xrender::XRadialGradient < FFI::Struct
-	layout \
-		:inner, X11::Xrender::XCircle,
-		:outer, X11::Xrender::XCircle
+  layout \
+    :inner, X11::Xrender::XCircle,
+    :outer, X11::Xrender::XCircle
 end

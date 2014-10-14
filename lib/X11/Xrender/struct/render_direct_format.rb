@@ -27,13 +27,13 @@
 #++
 
 class X11::Xrender::XRenderDirectFormat < FFI::Struct
-	layout \
-		:red,       :short,
-		:redMask,   :short,
-		:green,     :short,
-		:greenMask, :short,
-		:blue,      :short,
-		:blueMask,  :short,
-		:alpha,     :short,
-		:alphaMask, :short
+  layout \
+    :red,       :short,
+    :redMask,   :short,
+    :green,     :short,
+    :greenMask, :short,
+    :blue,      :short,
+    :blueMask,  :short,
+    :alpha,     :short,
+    :alphaMask, :short
 end

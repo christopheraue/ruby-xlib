@@ -27,11 +27,11 @@
 #++
 
 class X11::Xlib::XGenericEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:extension,  :int,
-		:evtype,     :int
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :extension,  :int,
+    :evtype,     :int
 end

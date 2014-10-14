@@ -27,11 +27,11 @@
 #++
 
 class X11::Xlib::XKeymapEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:window,     :Window,
-		:key_vector, [:char, 32]
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :window,     :Window,
+    :key_vector, [:char, 32]
 end

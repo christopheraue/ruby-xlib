@@ -27,18 +27,18 @@
 #++
 
 class X11::Xlib::XGraphicsExposeEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:window,     :Window,
-		:drawable,   :Drawable,
-		:x,          :int,
-		:y,          :int,
-		:width,      :int,
-		:height,     :int,
-		:count,      :int,
-		:major_code, :int,
-		:minor_code, :int
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :window,     :Window,
+    :drawable,   :Drawable,
+    :x,          :int,
+    :y,          :int,
+    :width,      :int,
+    :height,     :int,
+    :count,      :int,
+    :major_code, :int,
+    :minor_code, :int
 end

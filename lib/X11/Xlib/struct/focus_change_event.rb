@@ -27,12 +27,12 @@
 #++
 
 class X11::Xlib::XFocusChangeEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:window,     :Window,
-		:mode,       :int,
-		:detail,     :int
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :window,     :Window,
+    :mode,       :int,
+    :detail,     :int
 end

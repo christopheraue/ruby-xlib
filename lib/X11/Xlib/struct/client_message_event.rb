@@ -27,20 +27,20 @@
 #++
 
 class X11::Xlib::XClientMessageEvent < FFI::Struct
-	class Data < FFI::Struct
-		layout \
-			:b, [:char, 20],
-			:s, [:short, 10],
-			:l, [:long, 5]
-	end
+  class Data < FFI::Struct
+    layout \
+      :b, [:char, 20],
+      :s, [:short, 10],
+      :l, [:long, 5]
+  end
 
-	layout \
-		:struct,         :int,
-		:serial,       :ulong,
-		:send_event,   :Bool,
-		:display,      :pointer,
-		:window,       :Window,
-		:message_type, :Atom,
-		:format,       :int,
-		:data,         Data
+  layout \
+    :struct,         :int,
+    :serial,       :ulong,
+    :send_event,   :Bool,
+    :display,      :pointer,
+    :window,       :Window,
+    :message_type, :Atom,
+    :format,       :int,
+    :data,         Data
 end

@@ -27,9 +27,9 @@
 #++
 
 class X11::Xrandr::XRRScreenSize < FFI::Struct
-	layout \
-		:width,   :int,
-		:height,  :int,
-		:mwidth,  :int,
-		:mheight, :int
+  layout \
+    :width,   :int,
+    :height,  :int,
+    :mwidth,  :int,
+    :mheight, :int
 end

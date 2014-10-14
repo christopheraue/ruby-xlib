@@ -27,8 +27,8 @@
 #++
 
 class X11::Xrender::XSpanFix < FFI::Struct
-	layout \
-		:left,  :XFixed,
-		:right, :XFixed,
-		:y,     :XFixed
+  layout \
+    :left,  :XFixed,
+    :right, :XFixed,
+    :y,     :XFixed
 end

@@ -27,20 +27,20 @@
 #++
 
 class X11::Xrandr::XRROutputInfo < FFI::Struct
-	layout \
-		:timestamp,      :Time,
-		:crtc,           :RRCrtc,
-		:name,           :string,
-		:nameLen,        :int,
-		:mm_width,       :ulong,
-		:mm_height,      :ulong,
-		:connection,     :Connection,
-		:subpixel_order, :SubpixelOrder,
-		:ncrtc,          :int,
-		:crtcs,          :pointer,
-		:nclone,         :int,
-		:clones,         :pointer,
-		:nmode,          :int,
-		:npreferred,     :int,
-		:modes,          :pointer
+  layout \
+    :timestamp,      :Time,
+    :crtc,           :RRCrtc,
+    :name,           :string,
+    :nameLen,        :int,
+    :mm_width,       :ulong,
+    :mm_height,      :ulong,
+    :connection,     :Connection,
+    :subpixel_order, :SubpixelOrder,
+    :ncrtc,          :int,
+    :crtcs,          :pointer,
+    :nclone,         :int,
+    :clones,         :pointer,
+    :nmode,          :int,
+    :npreferred,     :int,
+    :modes,          :pointer
 end

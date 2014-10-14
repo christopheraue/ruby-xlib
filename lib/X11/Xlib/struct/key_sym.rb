@@ -29,17 +29,17 @@
 module X11; module C
 
 module KeySym
-	extend FFI::DataConverter
+  extend FFI::DataConverter
 
-	native_type :XID
+  native_type :XID
 
-	def self.to_native (value, ctx)
-		value.to_i
-	end
+  def self.to_native (value, ctx)
+    value.to_i
+  end
 
-	def self.from_native (value, ctx)
-		X11::Keysym.new(value)
-	end
+  def self.from_native (value, ctx)
+    X11::Keysym.new(value)
+  end
 end
 
 FFI.typedef KeySym, :KeySym

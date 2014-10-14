@@ -27,13 +27,13 @@
 #++
 
 class X11::Xlib::Visual < FFI::Struct
-	layout \
-		:ext_data,     :pointer,
-		:visualid,     :VisualID,
-		:class,        :int,
-		:read_mask,    :ulong,
-		:green_mask,   :ulong,
-		:blue_mask,    :ulong,
-		:buts_per_rgb, :int,
-		:map_entries,  :int
+  layout \
+    :ext_data,     :pointer,
+    :visualid,     :VisualID,
+    :class,        :int,
+    :read_mask,    :ulong,
+    :green_mask,   :ulong,
+    :blue_mask,    :ulong,
+    :buts_per_rgb, :int,
+    :map_entries,  :int
 end

@@ -27,6 +27,6 @@
 #++
 
 class X11::Xrender::XTransform < FFI::Struct
-	layout \
-		:matrix, [[:XFixed, 3], 3]
+  layout \
+    :matrix, [[:XFixed, 3], 3]
 end

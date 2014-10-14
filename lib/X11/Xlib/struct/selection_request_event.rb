@@ -27,15 +27,15 @@
 #++
 
 class X11::Xlib::XSelectionRequestEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:owner,      :Window,
-		:requestor,  :Window,
-		:selection,  :Atom,
-		:target,     :Atom,
-		:property,   :Atom,
-		:time,       :Time
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :owner,      :Window,
+    :requestor,  :Window,
+    :selection,  :Atom,
+    :target,     :Atom,
+    :property,   :Atom,
+    :time,       :Time
 end

@@ -27,12 +27,12 @@
 #++
 
 class X11::Xlib::XNoExposeEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:drawable,   :Drawable,
-		:major_code, :int,
-		:minor_code, :int
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :drawable,   :Drawable,
+    :major_code, :int,
+    :minor_code, :int
 end

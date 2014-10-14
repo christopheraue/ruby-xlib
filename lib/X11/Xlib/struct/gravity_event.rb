@@ -27,13 +27,13 @@
 #++
 
 class X11::Xlib::XGravityEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:event,      :Window,
-		:window,     :Window,
-		:x,          :int,
-		:y,          :int
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :event,      :Window,
+    :window,     :Window,
+    :x,          :int,
+    :y,          :int
 end

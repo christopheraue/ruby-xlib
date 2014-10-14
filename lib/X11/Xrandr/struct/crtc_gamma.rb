@@ -27,9 +27,9 @@
 #++
 
 class X11::Xrandr::XRRCrtcGamma < FFI::Struct
-	layout \
-		:size,  :int,
-		:red,   :pointer,
-		:green, :pointer,
-		:blue,  :pointer
+  layout \
+    :size,  :int,
+    :red,   :pointer,
+    :green, :pointer,
+    :blue,  :pointer
 end

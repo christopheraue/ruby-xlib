@@ -27,7 +27,7 @@
 #++
 
 class X11::Xrender::XSpanFix < FFI::Struct
-	layout \
-		:top,    X11::Xrender::XSpanFix,
-		:bottom, X11::Xrender::XSpanFix
+  layout \
+    :top,    X11::Xrender::XSpanFix,
+    :bottom, X11::Xrender::XSpanFix
 end

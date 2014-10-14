@@ -27,7 +27,7 @@
 #++
 
 class X11::Xlib::XPoint < FFI::Struct
-	layout \
-		:x, :short,
-		:y, :short
+  layout \
+    :x, :short,
+    :y, :short
 end

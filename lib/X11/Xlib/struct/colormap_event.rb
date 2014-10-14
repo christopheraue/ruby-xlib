@@ -27,13 +27,13 @@
 #++
 
 class X11::Xlib::XColormapEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:window,     :Window,
-		:colormap,   :Colormap,
-		:new,        :Bool,
-		:state,      :int
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :window,     :Window,
+    :colormap,   :Colormap,
+    :new,        :Bool,
+    :state,      :int
 end

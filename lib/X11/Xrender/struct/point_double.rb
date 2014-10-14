@@ -27,7 +27,7 @@
 #++
 
 class X11::Xrender::XPointDouble < FFI::Struct
-	layout \
-		:x, :XDouble,
-		:y, :XDouble
+  layout \
+    :x, :XDouble,
+    :y, :XDouble
 end

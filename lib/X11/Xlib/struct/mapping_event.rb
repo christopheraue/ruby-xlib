@@ -27,13 +27,13 @@
 #++
 
 class X11::Xlib::XMappingEvent < FFI::Struct
-	layout \
-		:struct,          :int,
-		:serial,        :ulong,
-		:send_event,    :Bool,
-		:display,       :pointer,
-		:window,        :Window,
-		:request,       :int,
-		:first_keycode, :int,
-		:count,         :int
+  layout \
+    :struct,          :int,
+    :serial,        :ulong,
+    :send_event,    :Bool,
+    :display,       :pointer,
+    :window,        :Window,
+    :request,       :int,
+    :first_keycode, :int,
+    :count,         :int
 end

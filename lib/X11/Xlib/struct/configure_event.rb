@@ -27,18 +27,18 @@
 #++
 
 class X11::Xlib::XConfigureEvent < FFI::Struct
-	layout \
-		:struct,              :int,
-		:serial,            :ulong,
-		:send_event,        :Bool,
-		:display,           :pointer,
-		:event,             :Window,
-		:window,            :Window,
-		:x,                 :int,
-		:y,                 :int,
-		:width,             :int,
-		:height,            :int,
-		:border_width,      :int,
-		:above,             :Window,
-		:override_redirect, :Bool
+  layout \
+    :struct,              :int,
+    :serial,            :ulong,
+    :send_event,        :Bool,
+    :display,           :pointer,
+    :event,             :Window,
+    :window,            :Window,
+    :x,                 :int,
+    :y,                 :int,
+    :width,             :int,
+    :height,            :int,
+    :border_width,      :int,
+    :above,             :Window,
+    :override_redirect, :Bool
 end

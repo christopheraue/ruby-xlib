@@ -27,17 +27,17 @@
 #++
 
 class X11::Xlib::XCreateWindowEvent < FFI::Struct
-	layout \
-		:struct,              :int,
-		:serial,            :ulong,
-		:send_event,        :Bool,
-		:display,           :pointer,
-		:parent,            :Window,
-		:window,            :Window,
-		:x,                 :int,
-		:y,                 :int,
-		:width,             :int,
-		:height,            :int,
-		:border_width,      :int,
-		:override_redirect, :Bool
+  layout \
+    :struct,              :int,
+    :serial,            :ulong,
+    :send_event,        :Bool,
+    :display,           :pointer,
+    :parent,            :Window,
+    :window,            :Window,
+    :x,                 :int,
+    :y,                 :int,
+    :width,             :int,
+    :height,            :int,
+    :border_width,      :int,
+    :override_redirect, :Bool
 end

@@ -27,11 +27,11 @@
 #++
 
 class X11::Xlib::XDestroyWindowEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:event,      :Window,
-		:window,     :Window
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :event,      :Window,
+    :window,     :Window
 end

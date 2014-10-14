@@ -27,11 +27,20 @@
 #++
 
 module FFI
-	typedef :XID, :RROutput
-	typedef :XID, :RRCrtc
-	typedef :XID, :RRMode
+  typedef :ushort, :Rotation
+  typedef :ushort, :SizeID
+  typedef :ushort, :SubpixelOrder
+  typedef :ushort, :Connection
+  typedef :ushort, :XRandrRotation
+  typedef :ushort, :XRandrSizeID
+  typedef :ushort, :XRandrSubpixelOrder
+  typedef :ulong,  :XRandrModeFlags
 
-	typedef :ulong, :XRRModeFlags
+  typedef :XID, :RROutput
+  typedef :XID, :RRCrtc
+  typedef :XID, :RRMode
+
+  typedef :ulong, :XRRModeFlags
 end
 
 require_relative 'struct/screen_size'

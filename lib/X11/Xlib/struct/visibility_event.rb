@@ -27,11 +27,11 @@
 #++
 
 class X11::Xlib::XVisibilityEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:window,     :Window,
-		:state,      :int
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :window,     :Window,
+    :state,      :int
 end

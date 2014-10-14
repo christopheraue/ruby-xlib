@@ -27,7 +27,7 @@
 #++
 
 class X11::Xrender::XConicalGradient < FFI::Struct
-	layout \
-		:center, X11::Xrender::XPointFixed,
-		:angle,  :XFixed
+  layout \
+    :center, X11::Xrender::XPointFixed,
+    :angle,  :XFixed
 end

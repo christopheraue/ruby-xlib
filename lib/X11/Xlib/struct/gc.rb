@@ -27,7 +27,7 @@
 #++
 
 class X11::Xlib::GC < FFI::Struct
-	layout \
-		:ext_data, :pointer,
-		:gid,      :GC
+  layout \
+    :ext_data, :pointer,
+    :gid,      :GC
 end

@@ -27,8 +27,8 @@
 #++
 
 class X11::Xrender::XCircle < FFI::Struct
-	layout \
-		:x,      :XFixed,
-		:y,      :XFixed,
-		:radius, :XFixed
+  layout \
+    :x,      :XFixed,
+    :y,      :XFixed,
+    :radius, :XFixed
 end

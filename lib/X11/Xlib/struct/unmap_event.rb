@@ -27,12 +27,12 @@
 #++
 
 class X11::Xlib::XUnmapEvent < FFI::Struct
-	layout \
-		:struct,           :int,
-		:serial,         :ulong,
-		:send_event,     :Bool,
-		:display,        :pointer,
-		:event,          :Window,
-		:window,         :Window,
-		:from_configure, :Bool
+  layout \
+    :struct,           :int,
+    :serial,         :ulong,
+    :send_event,     :Bool,
+    :display,        :pointer,
+    :event,          :Window,
+    :window,         :Window,
+    :from_configure, :Bool
 end

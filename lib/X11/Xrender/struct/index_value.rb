@@ -27,10 +27,10 @@
 #++
 
 class X11::Xrender::XIndexValue < FFI::Struct
-	layout \
-		:pixel, :ulong,
-		:red,   :ushort,
-		:green, :ushort,
-		:blue,  :ushort,
-		:alpha, :ushort
+  layout \
+    :pixel, :ulong,
+    :red,   :ushort,
+    :green, :ushort,
+    :blue,  :ushort,
+    :alpha, :ushort
 end

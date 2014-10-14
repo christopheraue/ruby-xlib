@@ -27,12 +27,12 @@
 #++
 
 class X11::Xlib::XCirculateRequestEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:event,      :Window,
-		:window,     :Window,
-		:place,      :int
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :event,      :Window,
+    :window,     :Window,
+    :place,      :int
 end

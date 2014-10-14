@@ -27,13 +27,13 @@
 #++
 
 class X11::Xrandr::XRRCrtcTransformAttributes < FFI::Struct
-	layout \
-		:pendingTransform, X11::Xrender::XTransform,
-		:pendingFilter,    :string,
-		:pendingNparams,   :int,
-		:pendingParams,    :pointer,
-		:currentTransform, X11::Xrender::XTransform,
-		:currentFilter,    :string,
-		:currentNparams,   :int,
-		:currentParams,    :pointer
+  layout \
+    :pendingTransform, X11::Xrender::XTransform,
+    :pendingFilter,    :string,
+    :pendingNparams,   :int,
+    :pendingParams,    :pointer,
+    :currentTransform, X11::Xrender::XTransform,
+    :currentFilter,    :string,
+    :currentNparams,   :int,
+    :currentParams,    :pointer
 end

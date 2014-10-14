@@ -27,9 +27,9 @@
 #++
 
 class X11::Xrender::XRenderColor < FFI::Struct
-	layout \
-		:red,   :ushort,
-		:green, :ushort,
-		:blue,  :ushort,
-		:alpha, :ushort
+  layout \
+    :red,   :ushort,
+    :green, :ushort,
+    :blue,  :ushort,
+    :alpha, :ushort
 end

@@ -27,15 +27,15 @@
 #++
 
 class X11::Xlib::XExposeEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:window,     :Window,
-		:x,          :int,
-		:y,          :int,
-		:width,      :int,
-		:height,     :int,
-		:count,      :int
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :window,     :Window,
+    :x,          :int,
+    :y,          :int,
+    :width,      :int,
+    :height,     :int,
+    :count,      :int
 end

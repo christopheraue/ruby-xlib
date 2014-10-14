@@ -27,12 +27,12 @@
 #++
 
 class X11::Xlib::XErrorEvent < FFI::Struct
-	layout \
-		:struct,         :int,
-		:display,      :pointer,
-		:resourceid,   :XID,
-		:serial,       :ulong,
-		:error_code,   :uchar,
-		:request_code, :uchar,
-		:minor_code,   :uchar
+  layout \
+    :struct,         :int,
+    :display,      :pointer,
+    :resourceid,   :XID,
+    :serial,       :ulong,
+    :error_code,   :uchar,
+    :request_code, :uchar,
+    :minor_code,   :uchar
 end

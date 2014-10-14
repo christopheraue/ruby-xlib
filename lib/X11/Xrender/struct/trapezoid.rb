@@ -27,9 +27,9 @@
 #++
 
 class X11::Xrender::XTrapezoid < FFI::Struct
-	layout \
-		:top,    :XFixed,
-		:bottom, :XFixed,
-		:left,   X11::Xrender::XLineFixed,
-		:right,  X11::Xrender::XLineFixed
+  layout \
+    :top,    :XFixed,
+    :bottom, :XFixed,
+    :left,   X11::Xrender::XLineFixed,
+    :right,  X11::Xrender::XLineFixed
 end

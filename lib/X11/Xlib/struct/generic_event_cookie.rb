@@ -27,13 +27,13 @@
 #++
 
 class X11::Xlib::XGenericEventCookie < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:extension,  :int,
-		:evtype,     :int,
-		:cookie,     :uint,
-		:data,       :pointer
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :extension,  :int,
+    :evtype,     :int,
+    :cookie,     :uint,
+    :data,       :pointer
 end

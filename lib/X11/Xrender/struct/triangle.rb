@@ -27,8 +27,8 @@
 #++
 
 class X11::Xrender::XTriangle < FFI::Struct
-	layout \
-		:p1, X11::Xrender::XPointFixed,
-		:p2, X11::Xrender::XPointFixed,
-		:p3, X11::Xrender::XPointFixed
+  layout \
+    :p1, X11::Xrender::XPointFixed,
+    :p2, X11::Xrender::XPointFixed,
+    :p3, X11::Xrender::XPointFixed
 end

@@ -27,7 +27,7 @@
 #++
 
 class X11::Xrender::XPointFixed < FFI::Struct
-	layout \
-		:x, :XFixed,
-		:y, :XFixed
+  layout \
+    :x, :XFixed,
+    :y, :XFixed
 end

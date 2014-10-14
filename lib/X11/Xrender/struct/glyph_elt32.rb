@@ -27,10 +27,10 @@
 #++
 
 class X11::Xrender::XGlyphElt32 < FFI::Struct
-	layout \
-		:glyphset, :GlyphSet,
-		:chars,    :pointer,
-		:nchars,   :int,
-		:xOff,     :int,
-		:yOff,     :int
+  layout \
+    :glyphset, :GlyphSet,
+    :chars,    :pointer,
+    :nchars,   :int,
+    :xOff,     :int,
+    :yOff,     :int
 end

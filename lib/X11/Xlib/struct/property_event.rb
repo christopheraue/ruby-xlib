@@ -27,13 +27,13 @@
 #++
 
 class X11::Xlib::XPropertyEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:window,     :Window,
-		:atom,       :Atom,
-		:time,       :Time,
-		:state,      :int
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :window,     :Window,
+    :atom,       :Atom,
+    :time,       :Time,
+    :state,      :int
 end

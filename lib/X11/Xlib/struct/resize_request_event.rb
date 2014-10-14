@@ -27,12 +27,12 @@
 #++
 
 class X11::Xlib::XResizeRequestEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:window,     :Window,
-		:width,      :int,
-		:height,     :int
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :window,     :Window,
+    :width,      :int,
+    :height,     :int
 end

@@ -27,18 +27,18 @@
 #++
 
 class X11::Xrandr::XRRPanning < FFI::Struct
-	layout \
-		:timestamp,     :Time,
-		:left,          :uint,
-		:top,           :uint,
-		:width,         :uint,
-		:height,        :uint,
-		:track_left,    :uint,
-		:track_top,     :uint,
-		:track_width,   :uint,
-		:track_height,  :uint,
-		:border_left,   :int,
-		:border_top,    :int,
-		:border_right,  :int,
-		:border_bottom, :int
+  layout \
+    :timestamp,     :Time,
+    :left,          :uint,
+    :top,           :uint,
+    :width,         :uint,
+    :height,        :uint,
+    :track_left,    :uint,
+    :track_top,     :uint,
+    :track_width,   :uint,
+    :track_height,  :uint,
+    :border_left,   :int,
+    :border_top,    :int,
+    :border_right,  :int,
+    :border_bottom, :int
 end

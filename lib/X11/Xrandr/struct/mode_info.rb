@@ -27,19 +27,19 @@
 #++
 
 class X11::Xrandr::XRRModeInfo < FFI::Struct
-	layout \
-		:id,         :RRMode,
-		:width,      :uint,
-		:height,     :uint,
-		:dotClock,   :ulong,
-		:hSyncStart, :uint,
-		:hSyncEnd,   :uint,
-		:hTotal,     :uint,
-		:hSkew,      :uint,
-		:vSyncStart, :uint,
-		:vSyncEnd,   :uint,
-		:vTotal,     :uint,
-		:name,       :string,
-		:nameLength, :uint,
-		:modeFlags,  :XRRModeFlags
+  layout \
+    :id,         :RRMode,
+    :width,      :uint,
+    :height,     :uint,
+    :dotClock,   :ulong,
+    :hSyncStart, :uint,
+    :hSyncEnd,   :uint,
+    :hTotal,     :uint,
+    :hSkew,      :uint,
+    :vSyncStart, :uint,
+    :vSyncEnd,   :uint,
+    :vTotal,     :uint,
+    :name,       :string,
+    :nameLength, :uint,
+    :modeFlags,  :XRRModeFlags
 end

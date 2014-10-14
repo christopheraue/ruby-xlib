@@ -27,24 +27,24 @@
 #++
 
 class X11::Xlib::Screen < FFI::Struct
-	layout \
-		:ext_data,        :pointer,
-		:display,         :pointer,
-		:root,            :Window,
-		:width,           :int,
-		:height,          :int,
-		:mwidth,          :int,
-		:mheight,         :int,
-		:ndepths,         :int,
-		:depths,          :pointer,
-		:root_depth,      :int,
-		:root_visual,     :pointer,
-		:default_gc,      X11::Xlib::GC,
-		:cmap,            :Colormap,
-		:white_pixel,     :ulong,
-		:black_pixel,     :ulong,
-		:max_maps,        :int,
-		:min_maps,        :int,
-		:save_unders,     :Bool,
-		:root_input_mask, :long
+  layout \
+    :ext_data,        :pointer,
+    :display,         :pointer,
+    :root,            :Window,
+    :width,           :int,
+    :height,          :int,
+    :mwidth,          :int,
+    :mheight,         :int,
+    :ndepths,         :int,
+    :depths,          :pointer,
+    :root_depth,      :int,
+    :root_visual,     :pointer,
+    :default_gc,      X11::Xlib::GC,
+    :cmap,            :Colormap,
+    :white_pixel,     :ulong,
+    :black_pixel,     :ulong,
+    :max_maps,        :int,
+    :min_maps,        :int,
+    :save_unders,     :Bool,
+    :root_input_mask, :long
 end

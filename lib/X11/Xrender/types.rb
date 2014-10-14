@@ -27,8 +27,12 @@
 #++
 
 module FFI
-	typedef :int,    :XFixed
-	typedef :double, :XDouble
+  typedef :int,    :XFixed
+  typedef :double, :XDouble
+  typedef :XID,    :Glyph
+  typedef :XID,    :GlyphSet
+  typedef :XID,    :Picture
+  typedef :XID,    :PictFormat
 end
 
 require_relative 'struct/render_direct_format'

@@ -27,9 +27,9 @@
 #++
 
 class X11::Xrender::XFilters < FFI::Struct
-	layout \
-		:nfilter, :int,
-		:filter,  :pointer,
-		:nalias,  :int,
-		:alias,   :pointer
+  layout \
+    :nfilter, :int,
+    :filter,  :pointer,
+    :nalias,  :int,
+    :alias,   :pointer
 end

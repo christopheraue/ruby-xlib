@@ -27,12 +27,12 @@
 #++
 
 class X11::Xlib::XMapEvent < FFI::Struct
-	layout \
-		:struct,              :int,
-		:serial,            :ulong,
-		:send_event,        :Bool,
-		:display,           :pointer,
-		:event,             :Window,
-		:window,            :Window,
-		:override_redirect, :Bool
+  layout \
+    :struct,              :int,
+    :serial,            :ulong,
+    :send_event,        :Bool,
+    :display,           :pointer,
+    :event,             :Window,
+    :window,            :Window,
+    :override_redirect, :Bool
 end

@@ -27,13 +27,13 @@
 #++
 
 class X11::Xrandr::XRRScreenResources < FFI::Struct
-	layout \
-		:timestamp,       :Time,
-		:configTimestamp, :Time,
-		:ncrtc,           :int,
-		:crtcs,           :pointer,
-		:noutput,         :int,
-		:outputs,         :pointer,
-		:nmode,           :int,
-		:modes,           :pointer
+  layout \
+    :timestamp,       :Time,
+    :configTimestamp, :Time,
+    :ncrtc,           :int,
+    :crtcs,           :pointer,
+    :noutput,         :int,
+    :outputs,         :pointer,
+    :nmode,           :int,
+    :modes,           :pointer
 end

@@ -27,12 +27,12 @@
 #++
 
 class X11::Xlib::XSelectionClearEvent < FFI::Struct
-	layout \
-		:struct,       :int,
-		:serial,     :ulong,
-		:send_event, :Bool,
-		:display,    :pointer,
-		:window,     :Window,
-		:selection,  :Atom,
-		:time,       :Time
+  layout \
+    :struct,       :int,
+    :serial,     :ulong,
+    :send_event, :Bool,
+    :display,    :pointer,
+    :window,     :Window,
+    :selection,  :Atom,
+    :time,       :Time
 end

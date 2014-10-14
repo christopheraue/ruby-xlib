@@ -27,20 +27,20 @@
 #++
 
 class X11::Xlib::XMotionEvent < FFI::Struct
-	layout \
-		:struct,        :int,
-		:serial,      :ulong,
-		:send_event,  :Bool,
-		:display,     :pointer,
-		:window,      :Window,
-		:root,        :Window,
-		:subwindow,   :Window,
-		:time,        :Time,
-		:x,           :int,
-		:y,           :int,
-		:x_root,      :int,
-		:y_root,      :int,
-		:state,       :uint,
-		:is_hint,     :char,
-		:same_screen, :Bool
+  layout \
+    :struct,        :int,
+    :serial,      :ulong,
+    :send_event,  :Bool,
+    :display,     :pointer,
+    :window,      :Window,
+    :root,        :Window,
+    :subwindow,   :Window,
+    :time,        :Time,
+    :x,           :int,
+    :y,           :int,
+    :x_root,      :int,
+    :y_root,      :int,
+    :state,       :uint,
+    :is_hint,     :char,
+    :same_screen, :Bool
 end
