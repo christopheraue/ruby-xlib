@@ -28,7 +28,7 @@
 
 class X11::Xlib::XKeyEvent < FFI::Struct
   layout \
-    :struct,        :int,
+    :type,        :int,
     :serial,      :ulong,
     :send_event,  :Bool,
     :display,     :pointer,

@@ -35,7 +35,7 @@ class X11::Xlib::XClientMessageEvent < FFI::Struct
   end
 
   layout \
-    :struct,         :int,
+    :type,         :int,
     :serial,       :ulong,
     :send_event,   :Bool,
     :display,      :pointer,
