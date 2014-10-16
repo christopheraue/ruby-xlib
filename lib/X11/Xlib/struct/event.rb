@@ -28,7 +28,7 @@
 
 class X11::Xlib::XEvent < FFI::Union
   layout \
-    :struct,              :int,
+    :type,              :int,
     :xany,              X11::Xlib::XAnyEvent,
     :xkey,              X11::Xlib::XKeyEvent,
     :xbutton,           X11::Xlib::XButtonEvent,

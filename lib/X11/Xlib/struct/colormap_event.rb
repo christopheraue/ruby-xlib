@@ -28,7 +28,7 @@
 
 class X11::Xlib::XColormapEvent < FFI::Struct
   layout \
-    :struct,       :int,
+    :type,       :int,
     :serial,     :ulong,
     :send_event, :Bool,
     :display,    :pointer,
