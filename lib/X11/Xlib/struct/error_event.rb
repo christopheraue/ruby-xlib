@@ -28,7 +28,7 @@
 
 class X11::Xlib::XErrorEvent < FFI::Struct
   layout \
-    :type,         :int,
+    :struct,         :int,
     :display,      :pointer,
     :resourceid,   :XID,
     :serial,       :ulong,

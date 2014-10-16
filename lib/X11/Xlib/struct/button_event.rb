@@ -28,7 +28,7 @@
 
 class X11::Xlib::XButtonEvent < FFI::Struct
   layout \
-    :type,        :int,
+    :struct,        :int,
     :serial,      :ulong,
     :send_event,  :Bool,
     :display,     :pointer,

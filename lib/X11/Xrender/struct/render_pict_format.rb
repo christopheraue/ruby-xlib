@@ -29,7 +29,7 @@
 class X11::Xrender::XRenderPictFormat < FFI::Struct
   layout \
     :id,       :PictFormat,
-    :type,     :int,
+    :struct,   :int,
     :depth,    :int,
     :direct,   X11::Xrender::XRenderDirectFormat,
     :colormap, :Colormap
