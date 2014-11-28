@@ -2,11 +2,14 @@ module X11::Xlib
   ANY_PROPERTY_TYPE = 0
   PROPERTY_NEW_VALUE = 0
   PROPERTY_DELETE = 1
+  PROP_MODE_REPLACE = 0
+  PROP_MODE_PREPEND = 1
+  PROP_MODE_APPEND = 2
 
   MAP_STATE = {
-    0 => 'IsUnmapped',
-    1 => 'IsUnviewable',
-    2 => 'IsViewable'
+    0 => :IsUnmapped,
+    1 => :IsUnviewable,
+    2 => :IsViewable
   }
 
   EVENT_MASK = {
