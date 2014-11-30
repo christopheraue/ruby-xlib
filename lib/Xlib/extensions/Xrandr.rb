@@ -26,7 +26,7 @@
 # or implied.
 #++
 
-require_relative 'Xlib'
+require 'Xlib'
 require_relative 'Xrender'
 
 module Xlib

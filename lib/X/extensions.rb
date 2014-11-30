@@ -26,16 +26,5 @@
 # or implied.
 #++
 
-require 'ffi'
-
-module Xlib
-  extend FFI::Library
-  ffi_lib 'X11'
-end
-
-require_relative 'X'
-
-require_relative 'Xlib/constants'
-require_relative 'Xlib/types'
-require_relative 'Xlib/functions'
-require_relative 'Xlib/extensions'
+require_relative 'extensions/render'
+require_relative 'extensions/randr'

@@ -1,4 +1,5 @@
 #--
+# Copyleft meh. [http://meh.paranoid.pk | meh@paranoici.org]
 # Copyleft Christopher Aue. [http://christopheraue.net | mail@christopheraue.net]
 #
 # Redistribution and use in source and binary forms, with or without modification, are
@@ -26,16 +27,9 @@
 # or implied.
 #++
 
-require 'ffi'
-
-module Xlib
-  extend FFI::Library
-  ffi_lib 'X11'
+module FFI
+  typedef :XID,    :Glyph
+  typedef :XID,    :GlyphSet
+  typedef :XID,    :Picture
+  typedef :XID,    :PictFormat
 end
-
-require_relative 'X'
-
-require_relative 'Xlib/constants'
-require_relative 'Xlib/types'
-require_relative 'Xlib/functions'
-require_relative 'Xlib/extensions'

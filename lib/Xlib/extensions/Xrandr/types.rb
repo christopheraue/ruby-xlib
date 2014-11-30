@@ -32,7 +32,6 @@ module FFI
   typedef :XID, :RRCrtc
   typedef :XID, :RRModeq
   typedef :XID, :RRProvider
-
   typedef :ulong, :XRRModeFlags
 end
 

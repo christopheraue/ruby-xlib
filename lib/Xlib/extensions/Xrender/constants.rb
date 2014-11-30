@@ -26,16 +26,23 @@
 # or implied.
 #++
 
-require 'ffi'
-
 module Xlib
-  extend FFI::Library
-  ffi_lib 'X11'
+  PictFormatID	      = (1 << 0)
+  PictFormatType	    = (1 << 1)
+  PictFormatDepth	    = (1 << 2)
+  PictFormatRed	      = (1 << 3)
+  PictFormatRedMask   = (1 << 4)
+  PictFormatGreen	    = (1 << 5)
+  PictFormatGreenMask = (1 << 6)
+  PictFormatBlue	    = (1 << 7)
+  PictFormatBlueMask  = (1 << 8)
+  PictFormatAlpha	    = (1 << 9)
+  PictFormatAlphaMask = (1 << 10)
+  PictFormatColormap  = (1 << 11)
+  PictStandardARGB32  = 0
+  PictStandardRGB24   = 1
+  PictStandardA8	    = 2
+  PictStandardA4	    = 3
+  PictStandardA1	    = 4
+  PictStandardNUM	    = 5
 end
-
-require_relative 'X'
-
-require_relative 'Xlib/constants'
-require_relative 'Xlib/types'
-require_relative 'Xlib/functions'
-require_relative 'Xlib/extensions'
