@@ -1,5 +1,6 @@
 #--
 # Copyleft meh. [http://meh.paranoid.pk | meh@paranoici.org]
+# Copyleft Christopher Aue. [http://christopheraue.net | mail@christopheraue.net]
 #
 # Redistribution and use in source and binary forms, with or without modification, are
 # permitted provided that the following conditions are met:
@@ -26,7 +27,7 @@
 # or implied.
 #++
 
-class X11::Xrender::XTransform < FFI::Struct
+class X11::XTransform < FFI::Struct
   layout \
     :matrix, [[:XFixed, 3], 3]
 end

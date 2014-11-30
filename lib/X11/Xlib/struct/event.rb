@@ -1,5 +1,6 @@
 #--
 # Copyleft meh. [http://meh.paranoid.pk | meh@paranoici.org]
+# Copyleft Christopher Aue. [http://christopheraue.net | mail@christopheraue.net]
 #
 # Redistribution and use in source and binary forms, with or without modification, are
 # permitted provided that the following conditions are met:
@@ -26,42 +27,42 @@
 # or implied.
 #++
 
-class X11::Xlib::XEvent < FFI::Union
+class X11::XEvent < FFI::Union
   layout \
     :type,              :int,
-    :xany,              X11::Xlib::XAnyEvent,
-    :xkey,              X11::Xlib::XKeyEvent,
-    :xbutton,           X11::Xlib::XButtonEvent,
-    :xmotion,           X11::Xlib::XMotionEvent,
-    :xcrossing,         X11::Xlib::XCrossingEvent,
-    :xfocus,            X11::Xlib::XFocusChangeEvent,
-    :xexpose,           X11::Xlib::XExposeEvent,
-    :xgraphicsexpose,   X11::Xlib::XGraphicsExposeEvent,
-    :xnoexpose,         X11::Xlib::XNoExposeEvent,
-    :xvisibility,       X11::Xlib::XVisibilityEvent,
-    :xcreatewindow,     X11::Xlib::XCreateWindowEvent,
-    :xdestroywindow,    X11::Xlib::XDestroyWindowEvent,
-    :xunmap,            X11::Xlib::XUnmapEvent,
-    :xmap,              X11::Xlib::XMapEvent,
-    :xmaprequest,       X11::Xlib::XMapRequestEvent,
-    :xreparent,         X11::Xlib::XReparentEvent,
-    :xconfigure,        X11::Xlib::XConfigureEvent,
-    :xgravity,          X11::Xlib::XGravityEvent,
-    :xresizerequest,    X11::Xlib::XResizeRequestEvent,
-    :xconfigurerequest, X11::Xlib::XConfigureRequestEvent,
-    :xcirculate,        X11::Xlib::XCirculateEvent,
-    :xcirculaterequest, X11::Xlib::XCirculateRequestEvent,
-    :xproperty,         X11::Xlib::XPropertyEvent,
-    :xselectionclear,   X11::Xlib::XSelectionClearEvent,
-    :xselectionrequest, X11::Xlib::XSelectionRequestEvent,
-    :xselection,        X11::Xlib::XSelectionEvent,
-    :xcolormap,         X11::Xlib::XColormapEvent,
-    :xclient,           X11::Xlib::XClientMessageEvent,
-    :xmapping,          X11::Xlib::XMappingEvent,
-    :xerror,            X11::Xlib::XErrorEvent,
-    :xkeymap,           X11::Xlib::XKeymapEvent,
-    :xgeneric,          X11::Xlib::XGenericEvent,
-    :xcookie,           X11::Xlib::XGenericEventCookie,
+    :xany,              X11::XAnyEvent,
+    :xkey,              X11::XKeyEvent,
+    :xbutton,           X11::XButtonEvent,
+    :xmotion,           X11::XMotionEvent,
+    :xcrossing,         X11::XCrossingEvent,
+    :xfocus,            X11::XFocusChangeEvent,
+    :xexpose,           X11::XExposeEvent,
+    :xgraphicsexpose,   X11::XGraphicsExposeEvent,
+    :xnoexpose,         X11::XNoExposeEvent,
+    :xvisibility,       X11::XVisibilityEvent,
+    :xcreatewindow,     X11::XCreateWindowEvent,
+    :xdestroywindow,    X11::XDestroyWindowEvent,
+    :xunmap,            X11::XUnmapEvent,
+    :xmap,              X11::XMapEvent,
+    :xmaprequest,       X11::XMapRequestEvent,
+    :xreparent,         X11::XReparentEvent,
+    :xconfigure,        X11::XConfigureEvent,
+    :xgravity,          X11::XGravityEvent,
+    :xresizerequest,    X11::XResizeRequestEvent,
+    :xconfigurerequest, X11::XConfigureRequestEvent,
+    :xcirculate,        X11::XCirculateEvent,
+    :xcirculaterequest, X11::XCirculateRequestEvent,
+    :xproperty,         X11::XPropertyEvent,
+    :xselectionclear,   X11::XSelectionClearEvent,
+    :xselectionrequest, X11::XSelectionRequestEvent,
+    :xselection,        X11::XSelectionEvent,
+    :xcolormap,         X11::XColormapEvent,
+    :xclient,           X11::XClientMessageEvent,
+    :xmapping,          X11::XMappingEvent,
+    :xerror,            X11::XErrorEvent,
+    :xkeymap,           X11::XKeymapEvent,
+    :xgeneric,          X11::XGenericEvent,
+    :xcookie,           X11::XGenericEventCookie,
     :pad,               [:long, 24]
 end
 

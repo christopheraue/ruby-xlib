@@ -1,5 +1,6 @@
 #--
 # Copyleft meh. [http://meh.paranoid.pk | meh@paranoici.org]
+# Copyleft Christopher Aue. [http://christopheraue.net | mail@christopheraue.net]
 #
 # Redistribution and use in source and binary forms, with or without modification, are
 # permitted provided that the following conditions are met:
@@ -26,8 +27,8 @@
 # or implied.
 #++
 
-class X11::Xrender::XSpanFix < FFI::Struct
+class X11::XSpanFix < FFI::Struct
   layout \
-    :top,    X11::Xrender::XSpanFix,
-    :bottom, X11::Xrender::XSpanFix
+    :top,    X11::XSpanFix,
+    :bottom, X11::XSpanFix
 end

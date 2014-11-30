@@ -1,5 +1,6 @@
 #--
 # Copyleft meh. [http://meh.paranoid.pk | meh@paranoici.org]
+# Copyleft Christopher Aue. [http://christopheraue.net | mail@christopheraue.net]
 #
 # Redistribution and use in source and binary forms, with or without modification, are
 # permitted provided that the following conditions are met:
@@ -26,7 +27,7 @@
 # or implied.
 #++
 
-module X11::Xrandr
+module X11
 
 attach_function :XRRQueryExtension, [:pointer, :pointer, :pointer], :Bool
 attach_function :XRRQueryVersion, [:pointer, :pointer, :pointer], :Status
@@ -100,5 +101,21 @@ attach_function :XRRSetPanning, [:pointer, :pointer, :RRCrtc, :pointer], :Status
 
 attach_function :XRRSetOutputPrimary, [:pointer, :Window, :RROutput], :void
 attach_function :XRRGetOutputPrimary, [:pointer, :Window], :RROutput
+
+attach_function :XRRGetProviderResources, [:pointer, :Window], :pointer
+attach_function :XRRFreeProviderResources, [:pointer], :void
+
+attach_function :XRRGetProviderInfo, [:pointer, :pointer, :RRProvider], :pointer
+attach_function :XRRFreeProviderInfo, [:pointer], :void
+
+attach_function :XRRSetProviderOutputSource, [:pointer, :XID, :XID], :int
+attach_function :XRRSetProviderOffloadSink, [:pointer, :XID, :XID], :int
+
+attach_function :XRRListProviderProperties, [:pointer, :RRProvider, :int], :pointer
+attach_function :XRRQueryProviderProperty, [:pointer, :RRProvider, :Atom], :pointer
+attach_function :XRRConfigureProviderProperty, [:pointer, :RRProvider, :Atom, :Bool, :Bool, :int, :long], :void
+attach_function :XRRChangeProviderProperty, [:pointer, :RRProvider, :Atom, :Atom, :int, :int, :pointer, :int], :void
+attach_function :XRRDeleteProviderProperty, [:pointer, :RRProvider, :Atom], :void
+attach_function :XRRGetProviderProperty, [:pointer, :RRProvider, :Atom, :long, :long, :Bool, :Bool, :Atom, :pointer, :pointer, :pointer, :pointer, :pointer], :int
 
 end

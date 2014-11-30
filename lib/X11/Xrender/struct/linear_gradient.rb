@@ -1,5 +1,6 @@
 #--
 # Copyleft meh. [http://meh.paranoid.pk | meh@paranoici.org]
+# Copyleft Christopher Aue. [http://christopheraue.net | mail@christopheraue.net]
 #
 # Redistribution and use in source and binary forms, with or without modification, are
 # permitted provided that the following conditions are met:
@@ -26,8 +27,8 @@
 # or implied.
 #++
 
-class X11::Xrender::XLinearGradient < FFI::Struct
+class X11::XLinearGradient < FFI::Struct
   layout \
-    :p1, X11::Xrender::XPointFixed,
-    :p2, X11::Xrender::XPointFixed
+    :p1, X11::XPointFixed,
+    :p2, X11::XPointFixed
 end

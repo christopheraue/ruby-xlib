@@ -1,5 +1,6 @@
 #--
 # Copyleft meh. [http://meh.paranoid.pk | meh@paranoici.org]
+# Copyleft Christopher Aue. [http://christopheraue.net | mail@christopheraue.net]
 #
 # Redistribution and use in source and binary forms, with or without modification, are
 # permitted provided that the following conditions are met:
@@ -26,7 +27,7 @@
 # or implied.
 #++
 
-class X11::Xlib::Screen < FFI::Struct
+class X11::Screen < FFI::Struct
   layout \
     :ext_data,        :pointer,
     :display,         :pointer,
@@ -39,7 +40,7 @@ class X11::Xlib::Screen < FFI::Struct
     :depths,          :pointer,
     :root_depth,      :int,
     :root_visual,     :pointer,
-    :default_gc,      X11::Xlib::GC,
+    :default_gc,      X11::GC,
     :cmap,            :Colormap,
     :white_pixel,     :ulong,
     :black_pixel,     :ulong,
