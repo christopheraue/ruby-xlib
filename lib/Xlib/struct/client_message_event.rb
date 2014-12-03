@@ -28,7 +28,7 @@
 #++
 
 class Xlib::XClientMessageEvent < FFI::Struct
-  class Data < FFI::Struct
+  class Data < FFI::Union
     layout \
       :b, [:char, 20],
       :s, [:short, 10],
