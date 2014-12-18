@@ -33,9 +33,9 @@ module Xlib
   ffi_lib 'X11'
 end
 
-require_relative 'X'
+require_relative 'x'
 
-require_relative 'Xlib/constants'
-require_relative 'Xlib/types'
-require_relative 'Xlib/functions'
-require_relative 'Xlib/extensions'
+require_relative 'xlib/constants'
+require_relative 'xlib/types'
+require_relative 'xlib/functions'
+require_relative 'xlib/extensions'

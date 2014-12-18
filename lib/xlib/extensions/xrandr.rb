@@ -26,5 +26,12 @@
 # or implied.
 #++
 
-require_relative 'extensions/Xrender'
-require_relative 'extensions/Xrandr'
+require 'xlib'
+require_relative 'xrender'
+
+module Xlib
+  ffi_lib 'Xrandr'
+end
+
+require_relative 'xrandr/types'
+require_relative 'xrandr/functions'
