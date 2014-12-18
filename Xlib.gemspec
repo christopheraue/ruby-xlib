@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name         = 'Xlib'
+  s.name         = 'xlib'
   s.version      = '0.0.1'
   s.author       = 'Christopher Aue'
   s.email        = 'mail@christopheraue.net'
