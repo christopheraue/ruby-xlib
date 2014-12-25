@@ -38,7 +38,8 @@ module Xlib
   end
 end
 
+require_relative 'xrandr/types'
+
 if Xlib.xrandr_available?
-  require_relative 'xrandr/types'
   require_relative 'xrandr/functions'
 end

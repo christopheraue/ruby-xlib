@@ -37,7 +37,8 @@ module Xlib
   end
 end
 
+require_relative 'xrender/types'
+
 if Xlib.xrender_available?
-  require_relative 'xrender/types'
   require_relative 'xrender/functions'
 end

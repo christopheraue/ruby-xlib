@@ -39,10 +39,11 @@ module Xlib
   end
 end
 
+require_relative 'xlib/constants'
+require_relative 'xlib/types'
+require_relative 'xlib/extensions'
+
 if Xlib.available?
   require_relative 'x'
-  require_relative 'xlib/constants'
-  require_relative 'xlib/types'
   require_relative 'xlib/functions'
-  require_relative 'xlib/extensions'
 end
