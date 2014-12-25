@@ -31,9 +31,9 @@ require 'xlib'
 module Xlib
   begin
     ffi_lib 'Xrender'
-    def xrender_available?; true end
+    def self.xrender_available?; true end
   rescue LoadError => e
-    def xrender_available?; false end
+    def self.xrender_available?; false end
   end
 end
 

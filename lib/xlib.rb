@@ -33,9 +33,9 @@ module Xlib
 
   begin
     ffi_lib 'X11'
-    def available?; true end
+    def self.available?; true end
   rescue LoadError => e
-    def available?; false end
+    def self.available?; false end
   end
 end
 

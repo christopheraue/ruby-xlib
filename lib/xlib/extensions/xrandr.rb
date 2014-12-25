@@ -32,9 +32,9 @@ require_relative 'xrender'
 module Xlib
   begin
     ffi_lib 'Xrandr'
-    def xrandr_available?; true end
+    def self.xrandr_available?; true end
   rescue LoadError => e
-    def xrandr_available?; false end
+    def self.xrandr_available?; false end
   end
 end
 
