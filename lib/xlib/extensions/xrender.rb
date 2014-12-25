@@ -29,7 +29,12 @@
 require 'xlib'
 
 module Xlib
-  ffi_lib 'Xrender'
+  begin
+    ffi_lib 'Xrender'
+    def xrender_available?; true end
+  rescue LoadError => e
+    def xrender_available?; false end
+  end
 end
 
 require_relative 'xrender/types'

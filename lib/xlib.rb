@@ -30,7 +30,13 @@ require 'ffi'
 
 module Xlib
   extend FFI::Library
-  ffi_lib 'X11'
+
+  begin
+    ffi_lib 'X11'
+    def available?; true end
+  rescue LoadError => e
+    def available?; false end
+  end
 end
 
 require_relative 'x'
