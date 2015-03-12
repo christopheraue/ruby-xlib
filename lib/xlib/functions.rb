@@ -121,8 +121,10 @@ attach_function :XDefaultScreenOfDisplay, [:pointer], :pointer
 attach_function :XEventMaskOfScreen, [:pointer], :long
 attach_function :XScreenNumberOfScreen, [:pointer], :int
 
-attach_function :XSetErrorHandler, [:pointer], :pointer
-attach_function :XSetIOErrorHandler, [:pointer], :pointer
+callback :error_handler, [:pointer, :pointer], :int
+attach_function :XSetErrorHandler, [:error_handler], :pointer
+callback :io_error_handler, [:pointer], :int
+attach_function :XSetIOErrorHandler, [:io_error_handler], :pointer
 
 attach_function :XListPixmapFormats, [:pointer, :pointer], :pointer
 attach_function :XListDepths, [:pointer, :int, :pointer], :pointer

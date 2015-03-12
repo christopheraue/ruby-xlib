@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name          = 'xlib'
-  s.version       = '1.0.0'
+  s.version       = '1.1.0'
   s.license       = 'BSD 2-clause'
 
   s.summary       = 'Interface to Xlib and its Xrender and Xrandr extensions'
-  s.description   = 'Speak with X11 using ruby.'
+  s.description   = 'Talk to X11 using ruby.'
 
   s.authors       = ['Christopher Aue']
   s.email         = 'mail@christopheraue.net'
