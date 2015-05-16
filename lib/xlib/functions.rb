@@ -121,6 +121,7 @@ attach_function :XDefaultScreenOfDisplay, [:pointer], :pointer
 attach_function :XEventMaskOfScreen, [:pointer], :long
 attach_function :XScreenNumberOfScreen, [:pointer], :int
 
+attach_function :XSynchronize, [:pointer, :Bool], :int
 callback :error_handler, [:pointer, :pointer], :int
 attach_function :XSetErrorHandler, [:error_handler], :pointer
 callback :io_error_handler, [:pointer], :int
