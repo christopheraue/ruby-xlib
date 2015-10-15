@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'xlib'
-  s.version       = '1.1.0'
+  s.version       = '1.1.1'
   s.license       = 'BSD 2-clause'
 
   s.summary       = 'Interface to Xlib and its Xrender and Xrandr extensions'

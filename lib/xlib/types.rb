@@ -34,7 +34,6 @@ require_relative 'struct/gc_values'
 require_relative 'struct/screen'
 require_relative 'struct/window_attributes'
 require_relative 'struct/visual'
-require_relative 'struct/key_sym'
 require_relative 'struct/point'
 
 require_relative 'struct/any_event'
