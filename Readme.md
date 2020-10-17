@@ -20,6 +20,8 @@ Usage
 The API lives in the `Xlib` namespace.
 
 ```ruby
+require 'xlib'
+
 display_pointer = Xlib.XOpenDisplay(':0')
 display = Xlib::Display.new(display_pointer)
 
@@ -29,13 +31,12 @@ screens = (0..display[:nscreens]-1).map do |number|
 end
 
 root_windows = screens.map do |screen|
-  Xlib.XRootWindowOfScreen(screen.pointer)
+  Xlib.XRootWindowOfScreen(screen)
 end
 
 root_window_sizes = root_windows.map do |root_win|
   attributes = Xlib::WindowAttributes.new
-  Xlib.XGetWindowAttributes(display.pointer, root_win.pointer, attributes.
-    pointer)
+  Xlib.XGetWindowAttributes(display, root_win, attributes)
   { width: attributes[:width], height: attributes[:height] }
 end
 ```
